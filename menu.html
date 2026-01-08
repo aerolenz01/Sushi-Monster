@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Sushi Monster | Farmington, UT</title>
+    <meta name="description"
+        content="Explore Sushi Monster's extensive menu featuring fresh sushi rolls, nigiri, sashimi, and delicious Japanese appetizers.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/isometric/50/sushi.png" type="image/png">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Special styles for the dedicated menu page */
+        .menu-page-header {
+            padding: 160px 5% 4rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(230, 57, 70, 0.15) 0%, transparent 100%);
+        }
+
+        .menu-section {
+            padding-top: 0 !important;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .menu-grid {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .menu-category-header {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .menu-category-header h2 {
+            font-size: 2.5rem;
+            display: inline-block;
+            background: var(--bg-color);
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .menu-category-header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background: rgba(230, 57, 70, 0.3);
+            z-index: 0;
+        }
+
+        .price-inline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sub-category {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .nigiri-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .nigiri-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .menu-category-header h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="glass">
+        <a href="index.html" class="nav-brand">
+            <div class="nav-brand-img-container">
+                <img src="logo.jpg" alt="Sushi Monster Logo" class="logo-img">
+            </div>
+            <div class="logo">SUSHI <span>MONSTER</span></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#menu" style="color: var(--accent-red);">Menu</a></li>
+            <li><a href="index.html#info">Location</a></li>
+        </ul>
+        <a href="tel:8014512880" class="cta-button"
+            style="padding: 0.6rem 1.5rem; font-size: 0.8rem; text-decoration: none;">Order Now</a>
+    </nav>
+
+    <div class="menu-page-header">
+        <h1 data-reveal style="font-size: 5rem; font-weight: 800; margin-bottom: 1rem; color: var(--text-primary);">OUR
+            <span style="color: var(--accent-red);">MENU</span>
+        </h1>
+        <p data-reveal style="color: var(--text-secondary); font-size: 1.2rem;">Fresh ingredients, masterfully prepared.
+        </p>
+    </div>
+
+    <section id="menu" class="menu-section">
+        <!-- Daily Special -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Daily Specials</h2>
+        </div>
+        <div style="text-align: center; margin-bottom: 3rem;" data-reveal>
+            <div class="daily-special-card glass" style="padding: 2.5rem; display: inline-block; border-width: 3px;">
+                <h3 style="color: var(--accent-red); font-size: 1.8rem; margin-bottom: 0.5rem;">PICK 2 ROLLS - $10.95
+                </h3>
+                <h3 style="color: var(--accent-red); font-size: 1.8rem; margin-bottom: 1.5rem;">PICK 3 ROLLS - $15.95
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; max-width: 600px; margin: 0 auto;">
+                    Choose from: Cucumber, Avocado, Asparagus, Sweet Potato, Sweet Lover, Cucumber Avocado, Mango
+                    Avocado, California, Philadelphia, Philadelphia II, Tuna*, Salmon*, Yellowtail*, Spicy Tuna*, Spicy
+                    Salmon*, House Special*, Alaskan*, Fuji*, Dynamite, Spicy Krab Crunch, Shrimp Asparagus, Shrimp
+                    Tempura, Shrimp Mango, Rock N Roll, Sushi Rock, Eel, LA, DC, Lightning, Salmon Katsu.
+                </p>
+            </div>
+        </div>
+
+        <!-- Lunch Special -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Lunch Specials</h2>
+        </div>
+        <div class="sub-category" data-reveal>Monday to Saturday 11AM to 3PM</div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="sub-category">Lunch Entrees</div>
+                <div class="menu-item-desc" style="margin-bottom: 1rem;">Served w/ vegetables, salad & choice of rice
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Tempura Vegetable <i class="fa-solid fa-leaf veg-icon"></i></div>
+                    <div class="menu-item-price">10.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Tempura Shrimp</div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Teriyaki Chicken</div>
+                    <div class="menu-item-price">10.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Teriyaki Steak</div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Teriyaki Salmon</div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Katsu Chicken</div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="sub-category">Lunch Hibachi</div>
+                <div class="menu-item-desc" style="margin-bottom: 1rem;">Served w/ noodles</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Hibachi Chicken</div>
+                    <div class="menu-item-price">11.55</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Hibachi Steak</div>
+                    <div class="menu-item-price">12.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Hibachi Shrimp</div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Hibachi Salmon</div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+                <div style="margin-top: 2rem;" class="sub-category">Bento Box</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Chicken / Shrimp</div>
+                    <div class="menu-item-price">12.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Steak / Salmon</div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="sub-category">Sushi Sashimi Lunch</div>
+                <div class="menu-item-desc" style="margin-bottom: 1rem;">Chef's choice w/ salad</div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sashimi Lunch *</div>
+                        <div class="menu-item-desc">8 pcs. assorted fish</div>
+                    </div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sushi Lunch *</div>
+                        <div class="menu-item-desc">5 pcs. Chef's assorted Nigiri w/ California Roll</div>
+                    </div>
+                    <div class="menu-item-price">12.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sushi Boat for Two *</div>
+                        <div class="menu-item-desc">10 pcs. Nigiri, 10 pcs. Sashimi & Spicy Tuna Roll</div>
+                    </div>
+                    <div class="menu-item-price">42.95</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category-header" data-reveal>
+            <h2>Appetizers</h2>
+        </div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Tuna Tataki *</div>
+                        <div class="menu-item-desc">Lightly seared sliced tuna on top of shredded cucumber w/ fish eggs,
+                            green onion, sesame & ponzu sauce</div>
+                    </div>
+                    <div class="menu-item-price">14.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sashimi Appetizer *</div>
+                        <div class="menu-item-desc">Chef's choice 6 pcs. of Sashimi</div>
+                    </div>
+                    <div class="menu-item-price">12.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Yellowtail Carpaccio *</div>
+                        <div class="menu-item-desc">Yellowtail sashimi w/ jalapeno, scallion, hot sauce & ponzu sauce
+                        </div>
+                    </div>
+                    <div class="menu-item-price">12.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Squid Salad</div>
+                    <div class="menu-item-price">8.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Seaweed Salad <i class="fa-solid fa-leaf veg-icon"></i></div>
+                    <div class="menu-item-price">6.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Cucumber Salad <i class="fa-solid fa-leaf veg-icon"></i></div>
+                    <div class="menu-item-price">4.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Fried Calamari</div>
+                    <div class="menu-item-price">10.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Gyoza (8 pcs.)</div>
+                        <div class="menu-item-desc">Meat & vegetable dumpling (steamed or fried)</div>
+                    </div>
+                    <div class="menu-item-price">7.50</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Tempura</div>
+                        <div class="menu-item-desc">Vegetable 6.25 / Shrimp 8.75</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Edamame <i class="fa-solid fa-leaf veg-icon"></i></div>
+                    <div class="menu-item-price">5.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Soft Shell Crab</div>
+                        <div class="menu-item-desc">Crispy, deep fried soft shell crab</div>
+                    </div>
+                    <div class="menu-item-price">11.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Mango Salad *</div>
+                        <div class="menu-item-desc">Lettuce/cucumber base, assorted fish, fish eggs, mango, cilantro,
+                            avocado, crunch & house dressing</div>
+                    </div>
+                    <div class="menu-item-price">14.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Green Globe *</div>
+                        <div class="menu-item-desc">Spicy salmon wrapped w/ avocado, seaweed salad, fish eggs, scallions
+                            & ponzu</div>
+                    </div>
+                    <div class="menu-item-price">10.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Salmon Shooter (4 pcs.) *</div>
+                    <div class="menu-item-price">11.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Mussel Shooter (4 pcs.) *</div>
+                    <div class="menu-item-price">11.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Heart Attack</div>
+                        <div class="menu-item-desc">Fried jalapeño stuffed w/ spicy tuna, cream cheese, spicy mayo, eel
+                            sauce & toppings</div>
+                    </div>
+                    <div class="menu-item-price">12.99</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nigiri / Sashimi -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Nigiri & Sashimi</h2>
+        </div>
+        <div class="sub-category" data-reveal>(2 Pieces Per Order)</div>
+        <div class="nigiri-grid" data-reveal style="margin-bottom: 4rem;">
+            <div class="menu-item">
+                <div class="menu-item-title">Tuna *</div>
+                <div class="menu-item-price">6.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Salmon *</div>
+                <div class="menu-item-price">6.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Smoked Salmon</div>
+                <div class="menu-item-price">6.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Yellowtail *</div>
+                <div class="menu-item-price">6.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">White Fish *</div>
+                <div class="menu-item-price">5.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Escolar *</div>
+                <div class="menu-item-price">6.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Eel</div>
+                <div class="menu-item-price">6.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Octopus</div>
+                <div class="menu-item-price">6.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Krab Stick</div>
+                <div class="menu-item-price">5.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Sweet Egg</div>
+                <div class="menu-item-price">5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Flying Fish Egg *</div>
+                <div class="menu-item-price">6.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Shrimp</div>
+                <div class="menu-item-price">6</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Sweet Shrimp *</div>
+                <div class="menu-item-price">10.95</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Scallop *</div>
+                <div class="menu-item-price">8.5</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Spicy Scallop *</div>
+                <div class="menu-item-price">8.95</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Squid *</div>
+                <div class="menu-item-price">6.95</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Salmon Roe *</div>
+                <div class="menu-item-price">6.95</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">Quail Egg *</div>
+                <div class="menu-item-price">3</div>
+            </div>
+        </div>
+
+        <!-- Sushi Combination -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Sushi Combinations</h2>
+        </div>
+        <div class="sub-category" data-reveal>Chef's Choice</div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sushi Dinner *</div>
+                        <div class="menu-item-desc">6 pcs. Nigiri & California Roll</div>
+                    </div>
+                    <div class="menu-item-price">15.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sushi Regular *</div>
+                        <div class="menu-item-desc">8 pcs. Nigiri & Fuji Roll</div>
+                    </div>
+                    <div class="menu-item-price">17.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sushi Deluxe *</div>
+                        <div class="menu-item-desc">10 pcs. Nigiri & Spicy Tuna Roll</div>
+                    </div>
+                    <div class="menu-item-price">20.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sashimi Dinner *</div>
+                        <div class="menu-item-desc">12 pcs. ($24.95) / 16 pcs. ($28.95)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sushi & Sashimi *</div>
+                        <div class="menu-item-desc">6 pcs. Nigiri & 8 pcs. Sashimi</div>
+                    </div>
+                    <div class="menu-item-price">26.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sushi Boat for Two *</div>
+                        <div class="menu-item-desc">10 pcs. Nigiri, 10 pcs. Sashimi & Spicy Tuna Roll</div>
+                    </div>
+                    <div class="menu-item-price">42.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Triple Sushi *</div>
+                        <div class="menu-item-desc">3 pcs. Tuna, 3 pcs. Salmon, 3 pcs. Yellowtail Nigiri w/ Spicy Tuna
+                            Roll</div>
+                    </div>
+                    <div class="menu-item-price">26.95</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monster Special Rolls -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Monster Special Rolls</h2>
+        </div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Crazy Horse Roll *</div>
+                        <div class="menu-item-desc">Tempura shrimp, krab salad w/ eel, spicy tuna, spicy mayo & eel
+                            sauce</div>
+                    </div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Spicy Crunch Roll</div>
+                        <div class="menu-item-desc">Katsu salmon, cream cheese, avocado w/ spicy crunch & eel sauce
+                        </div>
+                    </div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Play Boy *</div>
+                        <div class="menu-item-desc">Tempura shrimp & cucumber w/ tuna, avocado, spicy mayo & eel sauce
+                        </div>
+                    </div>
+                    <div class="menu-item-price">12.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">BMW Roll *</div>
+                        <div class="menu-item-desc">Spicy tuna, cucumber w/ tuna, avocado, wasabi sauce & hot sauce
+                        </div>
+                    </div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Pink Dragon *</div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Green Dragon</div>
+                        <div class="menu-item-desc">Tempura shrimp, cucumber w/ avocado, eel sauce & fish eggs</div>
+                    </div>
+                    <div class="menu-item-price">10.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Black Dragon</div>
+                    <div class="menu-item-price">12.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Volcano Roll</div>
+                        <div class="menu-item-desc">Krab, cream cheese, avocado w/ baked scallop, krab & eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Key West</div>
+                        <div class="menu-item-desc">Spicy krab, tempura shrimp wrapped in cucumber (no rice)</div>
+                    </div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Special Maki *</div>
+                        <div class="menu-item-desc">Salmon, krab, avocado, cream cheese in cucumber w/ ponzu & fish eggs
+                        </div>
+                    </div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sunrise *</div>
+                        <div class="menu-item-desc">Avocado, krabstick, cucumber w/ salmon & sliced lemon</div>
+                    </div>
+                    <div class="menu-item-price">12.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sunset *</div>
+                        <div class="menu-item-desc">Spicy salmon & crunch w/ salmon & avocado</div>
+                    </div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Winter Roll *</div>
+                        <div class="menu-item-desc">Tuna, yellowtail, avocado w/ spicy krab salad</div>
+                    </div>
+                    <div class="menu-item-price">13.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Summer Roll</div>
+                        <div class="menu-item-desc">Eel, avocado w/ steamed shrimp, avocado & mango</div>
+                    </div>
+                    <div class="menu-item-price">13.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Hero Roll *</div>
+                        <div class="menu-item-desc">Tuna, salmon, cream cheese, cucumber, avocado w/ krab</div>
+                    </div>
+                    <div class="menu-item-price">13.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Yama Roll *</div>
+                        <div class="menu-item-desc">Spicy yellowtail, avocado, crunch w/ yellowtail, jalapeño & flying
+                            fish eggs</div>
+                    </div>
+                    <div class="menu-item-price">14.95</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">New York *</div>
+                        <div class="menu-item-desc">Scallop, cucumber, seaweed salad w/ white tuna, lemon, spicy mayo &
+                            eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">14.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Lovers Roll</div>
+                        <div class="menu-item-desc">Steamed shrimp, avocado, lobster salad, crunch & fish eggs</div>
+                    </div>
+                    <div class="menu-item-price">14.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Valentines Roll (10 pcs.)</div>
+                        <div class="menu-item-desc">Avocado, krab salad, spicy crunch, eel in soy paper w/ eel sauce &
+                            spicy mayo</div>
+                    </div>
+                    <div class="menu-item-price">14.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Pink Lady Roll (10 pcs.) *</div>
+                        <div class="menu-item-desc">Fish trio, cream cheese, avocado, seaweed salad, crunch in soy paper
+                        </div>
+                    </div>
+                    <div class="menu-item-price">16.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Big Mike Roll *</div>
+                        <div class="menu-item-desc">Tempura shrimp & avocado w/ scallop, lemon, jalapeño, spicy mayo &
+                            eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">16.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Big Forest Roll *</div>
+                        <div class="menu-item-desc">Tempura shrimp & avocado w/ white tuna, lemon, jalapeño, spicy mayo
+                            & eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">15.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Snow White *</div>
+                        <div class="menu-item-desc">Snow crab, cucumber, avocado w/ salmon, avocado & duo sauces</div>
+                    </div>
+                    <div class="menu-item-price">16.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Mars Roll *</div>
+                        <div class="menu-item-desc">Tempura shrimp, cucumber w/ tuna, krab salad, fish eggs & eel sauce
+                        </div>
+                    </div>
+                    <div class="menu-item-price">14.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Super Duper Roll *</div>
+                        <div class="menu-item-desc">White tuna, cilantro, fish eggs, scallion, crunch w/ tempura white
+                            fish</div>
+                    </div>
+                    <div class="menu-item-price">13.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Dino Roll</div>
+                        <div class="menu-item-desc">Shrimp tempura w/ krab salad, avocado, spicy mayo & eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">14.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Misty Spice Roll *</div>
+                        <div class="menu-item-desc">Krab, cucumber, avocado, cilantro w/ tuna, avocado, jalapeño & hot
+                            sauce</div>
+                    </div>
+                    <div class="menu-item-price">15.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Fancy Dragon</div>
+                        <div class="menu-item-desc">Tempura shrimp, cucumber w/ smoked salmon, eel & avocado</div>
+                    </div>
+                    <div class="menu-item-price">13.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Mango Tango</div>
+                        <div class="menu-item-desc">Tempura shrimp, krab, avocado, cream cheese w/ avocado, mango &
+                            crunch</div>
+                    </div>
+                    <div class="menu-item-price">15.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Ding-Ding Roll *</div>
+                        <div class="menu-item-desc">Steamed shrimp, mango w/ salmon, avocado, kiwi & eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">15.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Sushi Hot Dog (12 pcs.) *</div>
+                        <div class="menu-item-desc">Triple fish base, krab salad, avocado, mango & specialty sauces
+                        </div>
+                    </div>
+                    <div class="menu-item-price">17.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Venga (Lightly Seared)</div>
+                        <div class="menu-item-desc">Katsu salmon, cheese, avocado w/ salmon, spicy mayo & eel sauce
+                        </div>
+                    </div>
+                    <div class="menu-item-price">15.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Ben & Chase Roll *</div>
+                        <div class="menu-item-desc">Pineapple & salmon w/ avocado & wasabi sauce</div>
+                    </div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Classic Sushi Rolls -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Classic Sushi Rolls</h2>
+        </div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-title">Tuna or Salmon Roll *</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Spicy Tuna or Salmon Roll *</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Yellowtail Roll *</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Shrimp Asparagus Roll</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Shrimp Tempura Roll</div>
+                        <div class="menu-item-desc">Tempura shrimp, cucumber w/ fish eggs & eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">6.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Spider Roll</div>
+                        <div class="menu-item-desc">Tempura softshell crab, cucumber, avocado & eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">9.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">California</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Philadelphia / II</div>
+                    <div class="menu-item-price">6.50 / 7.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Eel Roll</div>
+                    <div class="menu-item-price">7.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Shrimp Mango Roll</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Rainbow *</div>
+                        <div class="menu-item-desc">California roll topped w/ 4 types of fish & avocado</div>
+                    </div>
+                    <div class="menu-item-price">11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Rock N Roll</div>
+                    <div class="menu-item-price">7.50</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-title">House Special *</div>
+                    <div class="menu-item-price">7.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Lightning Roll</div>
+                    <div class="menu-item-price">7.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Salmon Katsu Roll</div>
+                    <div class="menu-item-price">7.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Alaskan *</div>
+                    <div class="menu-item-price">7.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Fuji Roll *</div>
+                    <div class="menu-item-price">7.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Caterpillar Roll</div>
+                        <div class="menu-item-desc">Eel, cucumber w/ avocado, fish egg & eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">11.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Spicy Krab Crunch Roll</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Sushi Rock</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">LA Roll</div>
+                    <div class="menu-item-price">8.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">DC Roll</div>
+                    <div class="menu-item-price">7.50</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vegetarian Rolls -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Vegetarian Sushi Rolls <i class="fa-solid fa-leaf veg-icon"></i></h2>
+        </div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-title">Cucumber Roll</div>
+                    <div class="menu-item-price">4.00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Avocado Roll</div>
+                    <div class="menu-item-price">4.00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Asparagus Roll</div>
+                    <div class="menu-item-price">4.00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Cucumber Avocado</div>
+                    <div class="menu-item-price">5.00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Mango Avocado</div>
+                    <div class="menu-item-price">5.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Sweet Potato Roll</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Sweet Lover</div>
+                    <div class="menu-item-price">6.95</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-title">Pure Planet</div>
+                    <div class="menu-item-price">8.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Venga II</div>
+                    <div class="menu-item-price">9.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Green River</div>
+                    <div class="menu-item-price">10.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Mango Scooter</div>
+                    <div class="menu-item-price">13.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Sun Flower</div>
+                    <div class="menu-item-price">10.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Surf Turf II (Deep Fried)</div>
+                    <div class="menu-item-price">12.99</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deep Fried Rolls -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Deep Fried Rolls</h2>
+        </div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Vegas Roll</div>
+                        <div class="menu-item-desc">Smoked salmon, krab, cream cheese w/ yum-yum, hot sauce & eel sauce
+                        </div>
+                    </div>
+                    <div class="menu-item-price">8.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Dynamite</div>
+                        <div class="menu-item-desc">Salmon, krab, asparagus w/ mayo, eel sauce & hot sauce</div>
+                    </div>
+                    <div class="menu-item-price">8.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Atlantic Roll</div>
+                        <div class="menu-item-desc">Tuna, avocado, cream cheese w/ yum-yum, hot sauce & eel sauce</div>
+                    </div>
+                    <div class="menu-item-price">8.99</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Fly Volcano</div>
+                        <div class="menu-item-desc">Spicy tuna, krab, cilantro w/ spicy mayo, eel sauce & fish eggs
+                        </div>
+                    </div>
+                    <div class="menu-item-price">10.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Mexican Roll</div>
+                        <div class="menu-item-desc">Fish variety roll in soy paper w/ krab salad & scallion</div>
+                    </div>
+                    <div class="menu-item-price">14.99</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Surf Turf</div>
+                        <div class="menu-item-desc">Steak, avocado, cream cheese, scallion, jalapeño w/ specialty sauce
+                        </div>
+                    </div>
+                    <div class="menu-item-price">14.99</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dinner Entree -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Dinner Entrees</h2>
+        </div>
+        <div class="sub-category" data-reveal>Served w/ Vegetable, Salad & Rice</div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-title">Tempura (Veg / Shrimp)</div>
+                    <div class="menu-item-price">13.95 / 17.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Hibachi (Chicken/Shrimp)</div>
+                        <div class="menu-item-desc">Served w/ noodles</div>
+                    </div>
+                    <div class="menu-item-price">15.95 / 17.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Hibachi (Steak/Salmon)</div>
+                        <div class="menu-item-desc">Served w/ noodles</div>
+                    </div>
+                    <div class="menu-item-price">18.95</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-title">Katsu Chicken</div>
+                    <div class="menu-item-price">16.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Teriyaki Chicken</div>
+                    <div class="menu-item-price">14.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Teriyaki Steak / Salmon</div>
+                    <div class="menu-item-price">17.95 / 18.95</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kid Meal & Sides -->
+        <div class="menu-grid" style="margin-top: 4rem;" data-reveal>
+            <div class="menu-item-group">
+                <div class="sub-category">Kid Meal (12 & Under)</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Teriyaki Chicken / Steak / Shrimp</div>
+                    <div class="menu-item-price">7.95</div>
+                </div>
+                <div style="margin-top: 2rem;" class="sub-category">Salads & Veggies</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">House Salad <i class="fa-solid fa-leaf veg-icon"></i></div>
+                    <div class="menu-item-price">3.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Grilled Vegetable <i class="fa-solid fa-leaf veg-icon"></i></div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="sub-category">Sides & Noodles</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Steamed Rice <i class="fa-solid fa-leaf veg-icon"></i></div>
+                    <div class="menu-item-price">2.75 / 5.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Fried Rice (Plain / GF)</div>
+                    <div class="menu-item-price">3.25+ / 7.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Protein Fried Rice</div>
+                    <div class="menu-item-price">9.95 - 11.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Noodles (Plain / Protein)</div>
+                    <div class="menu-item-price">7.50 - 11.50</div>
+                </div>
+            </div>
+        </div>
+        <!-- Beverages -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Beverages</h2>
+        </div>
+        <div class="menu-grid" data-reveal>
+            <div class="menu-item-group">
+                <div class="sub-category">Beer</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Sapporo / Kirin Ichiban</div>
+                    <div class="menu-item-price">5.95 / 9.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Asahi</div>
+                    <div class="menu-item-price">9.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Heineken / Corona</div>
+                    <div class="menu-item-price">5.00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Bud Light / Michelob Ultra</div>
+                    <div class="menu-item-price">5.00</div>
+                </div>
+                <div style="margin-top: 2rem;" class="sub-category">Wine by Glass</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">White Zinfandel / Chardonnay</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Riesling / Plum Wine</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Merlot / Cabernet Sauvignon</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Pinot Noir / Pinot Grigio</div>
+                    <div class="menu-item-price">6.50</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="sub-category">Sake (Small / Large)</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Hot Sake</div>
+                    <div class="menu-item-price">7.50 / 11.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Purple Haze (Hot)</div>
+                    <div class="menu-item-price">7.50 / 12.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Momokawa Pearl (Cold)</div>
+                    <div class="menu-item-price">8.50 / 13.95</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Summer Breeze (Cold)</div>
+                    <div class="menu-item-price">7.50 / 12.95</div>
+                </div>
+                <div style="margin-top: 2rem;" class="sub-category">Soft Drinks</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Coke Products / Iced Tea</div>
+                    <div class="menu-item-price">3.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Japanese Green Tea / Milk</div>
+                    <div class="menu-item-price">3.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Fruit Juices / Fiji Water</div>
+                    <div class="menu-item-price">3.25 / 4.50</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="sub-category">Specialty Drinks</div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Thai Tea</div>
+                    <div class="menu-item-price">5.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">Pineapple Thai Tea</div>
+                    <div class="menu-item-price">6.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Ramune</div>
+                        <div class="menu-item-desc">Original, Strawberry, Peach, Lychee, Melon</div>
+                    </div>
+                    <div class="menu-item-price">4.00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Coconut Milk</div>
+                        <div class="menu-item-desc">Original or banana flavor</div>
+                    </div>
+                    <div class="menu-item-price">4.95</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dessert -->
+        <div class="menu-category-header" data-reveal>
+            <h2>Desserts</h2>
+        </div>
+        <div class="menu-grid" style="margin-bottom: 4rem;" data-reveal>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Fried Ice Cream</div>
+                    </div>
+                    <div class="menu-item-price">8.00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Mochi Ice Cream</div>
+                        <div class="menu-item-desc">Strawberry, mango, red bean, green tea, cookies & cream</div>
+                    </div>
+                    <div class="menu-item-price">5.50</div>
+                </div>
+            </div>
+            <div class="menu-item-group">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">Strawberry or Vanilla Ice Cream</div>
+                    </div>
+                    <div class="menu-item-price">4.50</div>
+                </div>
+                <div style="margin-top: 1rem; font-style: italic; font-size: 0.8rem; color: var(--text-secondary);">
+                    * Please drink responsibly and with moderation *
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo-container">
+            <img src="logo.jpg" alt="Sushi Monster" class="footer-logo">
+        </div>
+        <div class="logo" style="margin-bottom: 0.5rem; font-size: 1.2rem;">SUSHI <span>MONSTER</span></div>
+        <div style="margin-bottom: 1rem;">
+            <a href="https://www.facebook.com/profile.php?id=100064115680919" target="_blank"
+                style="color: var(--text-primary); font-size: 1.2rem; margin: 0 0.5rem;"><i
+                    class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p style="margin-bottom: 0.5rem; color: var(--text-primary);">935 W. West Promontory | Farmington, Utah | (801)
+            451-2880</p>
+        <p>&copy; 2026 Sushi Monster. All sushi intended for immediate consumption.</p>
+        <p
+            style="margin-top: 1rem; font-size: 0.75rem; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--text-secondary);">
+            * Eating raw or undercooked meat, poultry, eggs, or seafood poses a health risk to everyone, but especially
+            to the elderly, young children under age 4, pregnant women and other highly susceptible individuals with
+            compromised immune systems.
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
